@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:background="@color/teal_200"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="8dp">
+
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="10dp"
+                    android:typeface="serif"
+                    android:text="Thêm địa chỉ"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    app:layout_constraintStart_toEndOf="@+id/backButton"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageButton
+                    android:id="@+id/backButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_baseline_arrow_back_ios_24"
+                    android:clickable="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lay4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout8">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollView3"
+            android:layout_width="match_parent"
+            android:layout_height="740dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <TextView
+                            android:layout_marginTop="20dp"
+                            android:id="@+id/editTextProvince"
+                            android:layout_marginStart="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tỉnh/Thành phố" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/drawable"
+                            android:layout_height="wrap_content">
+                            <Spinner
+                                android:id="@+id/provinceSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                />
+
+                        </LinearLayout>
+
+
+                        <TextView
+
+                            android:id="@+id/editTextDistrict"
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="10dp"
+                            android:layout_height="wrap_content"
+                            android:text="Quận/Huyện" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/drawable"
+                            android:layout_height="wrap_content">
+                            <Spinner
+                                android:id="@+id/districtSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                />
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/editTextWard"
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="10dp"
+                            android:layout_height="wrap_content"
+                            android:text="Phường/Xã" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/drawable"
+                            android:layout_height="wrap_content">
+                            <Spinner
+                                android:id="@+id/wardSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                />
+
+                        </LinearLayout>
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="10dp"
+                            android:layout_height="wrap_content"
+                            android:text="Địa chỉ cụ thể (Số nhà, ngõ )" />
+
+                        <EditText
+                            android:padding="2dp"
+                            android:id="@+id/editTextAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_margin="10dp"
+                            android:inputType="textMultiLine"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="0dp"
+            android:layout_height="49dp"
+            android:layout_weight="2"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_marginBottom="1dp"
+            android:typeface="serif"
+            android:textSize="18dp"
+            android:text="Tạo địa chỉ" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

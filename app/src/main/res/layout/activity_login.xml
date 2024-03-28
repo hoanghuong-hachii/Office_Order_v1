@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/bak2"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#ffffff"
+            android:inputType="textPassword"
+
+            app:startIconDrawable="@drawable/ic_email_24"
+            style="Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username"
+                android:background="#FFFFFF"
+                android:textColor="#121212"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Email/Username">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout"
+
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#BDB0B0"
+            app:endIconMode="password_toggle"
+            app:startIconDrawable="@drawable/ic_baseline_key_24"
+            style="Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:background="#FFFFFF"
+                android:textColor="@color/black"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Mật khẩu ">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/tv_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:layout_margin="5sp"
+            android:clickable="true"
+            android:text="Quên mật khẩu ?"
+            android:textColor="#2196F3"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="5sp"
+            android:layout_margin="25sp"
+            android:layout_gravity="center"
+            android:src="@drawable/bogoc"
+
+            android:backgroundTint="#F19D22"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:text="@string/Login"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:text="Bạn chưa có tài khoản ! "/>
+
+        <TextView
+            android:id="@+id/tvsignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#2196F3"
+            android:textSize="16dp"
+            android:text="Đăng ký"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

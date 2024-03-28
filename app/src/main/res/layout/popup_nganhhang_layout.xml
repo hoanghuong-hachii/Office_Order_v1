@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/ln_nganhhang"
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nganhhang">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+
+
+
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/id11"
+                    android:layout_margin="5sp"
+                    android:background="#4AD6D6BE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Dấu, mực dấu,\n khay mực dấu"
+                        android:paddingStart="20sp"
+                        android:paddingTop="10sp"
+                        android:textAlignment="center"
+                        android:paddingEnd="20sp"
+                        android:paddingBottom="10sp"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/id12"
+                    android:layout_margin="5sp"
+                    android:background="#4AD6D6BE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Bao đựng thẻ,\n dây đeo thẻ"
+                        android:paddingStart="20sp"
+                        android:paddingTop="10sp"
+                        android:paddingEnd="20sp"
+                        android:paddingBottom="10sp"
+                        android:textAlignment="center"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+
+
+
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/id21"
+                    android:layout_margin="5sp"
+                    android:background="#4AD6D6BE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Băng dính, cắt\n băng dính"
+                        android:paddingStart="20sp"
+                        android:textAlignment="center"
+                        android:paddingTop="10sp"
+                        android:paddingEnd="20sp"
+                        android:paddingBottom="10sp"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/id22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:background="#4AD6D6BE">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Hồ dán, \nkeo dán "
+                        android:paddingStart="20sp"
+                        android:textAlignment="center"
+                        android:paddingTop="10sp"
+                        android:paddingEnd="20sp"
+                        android:paddingBottom="10sp"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/id31"
+                    android:layout_margin="5sp"
+                    android:background="#4AD6D6BE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Kẹp các loại"
+                        android:paddingStart="20sp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:paddingTop="10sp"
+                        android:paddingEnd="20sp"
+                        android:paddingBottom="10sp"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/id32"
+                    android:layout_margin="5sp"
+                    android:background="#4AD6D6BE"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Dao, kéo,\n gọt chì, tẩy"
+                        android:paddingStart="20sp"
+                        android:paddingTop="10sp"
+                        android:textAlignment="center"
+                        android:paddingEnd="20sp"
+                        android:paddingBottom="10sp"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+
+
+
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/id41"
+                    android:layout_margin="5sp"
+                    android:background="#4AD6D6BE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="File lưu hồ sơ,\n tài liệu"
+                        android:textAlignment="center"
+                        android:paddingStart="10sp"
+                        android:paddingTop="10sp"
+                        android:paddingEnd="10sp"
+                        android:paddingBottom="10sp"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/id42"
+                    android:layout_margin="5sp"
+                    android:background="#4AD6D6BE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ghim các loại"
+                        android:textAlignment="center"
+                        android:paddingStart="10sp"
+                        android:layout_gravity="center"
+                        android:paddingTop="10sp"
+                        android:paddingEnd="10sp"
+                        android:paddingBottom="10sp"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/id51"
+                    android:layout_margin="5sp"
+                    android:background="#4AD6D6BE"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bìa các loại"
+                        android:textAlignment="center"
+                        android:paddingStart="10sp"
+                        android:layout_gravity="center"
+                        android:paddingTop="10sp"
+                        android:paddingEnd="10sp"
+                        android:paddingBottom="10sp"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/id52"
+                    android:layout_margin="5sp"
+                    android:background="#4AD6D6BE"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Khay,\nkệ các loại"
+                        android:textAlignment="center"
+                        android:paddingStart="10sp"
+                        android:paddingTop="10sp"
+                        android:paddingEnd="10sp"
+                        android:paddingBottom="10sp"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/id61"
+                    android:layout_margin="5sp"
+                    android:background="#4AD6D6BE"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sản phẩm giấy"
+                        android:textAlignment="center"
+                        android:paddingStart="10sp"
+                        android:layout_gravity="center"
+                        android:paddingTop="10sp"
+                        android:paddingEnd="10sp"
+                        android:paddingBottom="10sp"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/id62"
+                    android:layout_margin="5sp"
+                    android:background="#4AD6D6BE"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bút các loại"
+                        android:textAlignment="center"
+                        android:paddingStart="10sp"
+                        android:paddingTop="10sp"
+                        android:paddingEnd="10sp"
+                        android:paddingBottom="10sp"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="0sp"
+                android:layout_weight="0.5"
+                android:textAllCaps="false"
+                android:layout_margin="10sp"
+                android:layout_height="wrap_content"
+                android:textColor="#FB0505"
+                android:backgroundTint="#6DDFDBDB"
+                android:text="Chọn mới"/>
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="0sp"
+                android:layout_weight="0.5"
+                android:layout_margin="10sp"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FD0000"
+                android:textAllCaps="false"
+                android:text="Áp dụng"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
